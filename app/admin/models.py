@@ -1,8 +1,11 @@
 from dataclasses import dataclass
+from hashlib import sha256
+from typing import Optional
+
 
 
 @dataclass
 class Admin:
     id: int
     email: str
-    password: str | None = None
+    password: Optional[str] = None
